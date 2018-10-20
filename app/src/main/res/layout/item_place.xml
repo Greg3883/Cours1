@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:gravity="bottom|center" />
+
+        <TextView
+            android:id="@+id/longi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="76dp" />
+
+        <TextView
+            android:id="@+id/zip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="19dp" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="bottom|center"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="57dp" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

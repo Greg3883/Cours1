@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
 
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="237dp" />
-
+    <ListView
+        android:id="@+id/listMy"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:ignore="MissingConstraints" />
 </android.support.constraint.ConstraintLayout>
