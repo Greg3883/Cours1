@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent seePlaceDetailIntent = new Intent(MainActivity.this, OneViewActivity.class);
+                Place place = (Place) myList.getAdapter().getItem(position);
+                seePlaceDetailIntent.putExtra("placeStreet", place.getStreet());
                 startActivity(seePlaceDetailIntent);
             }
         });
