@@ -6,12 +6,11 @@
     android:layout_height="match_parent">
 
 
-
-    <TextView
-        android:id="@+id/detail"
+    <Button
+        android:id="@+id/selectImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="181dp"
-        tools:layout_editor_absoluteY="285dp" />
+        android:text="Button"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="164dp" />
 </android.support.constraint.ConstraintLayout>

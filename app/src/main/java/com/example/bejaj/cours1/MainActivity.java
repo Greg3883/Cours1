@@ -1,6 +1,7 @@
 package com.example.bejaj.cours1;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -39,9 +40,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent seePlaceDetailIntent = new Intent(MainActivity.this, OneViewActivity.class);
                 Place place = (Place) myList.getAdapter().getItem(position);
                 seePlaceDetailIntent.putExtra("placeStreet", place.getStreet());
+                Uri gmmIntentUri = Uri.parse("google.streetview:cbll=46.414382,10.013988");
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
                 startActivity(seePlaceDetailIntent);
             }
         });
+
+
     }
 
 
